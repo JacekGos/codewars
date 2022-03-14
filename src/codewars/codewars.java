@@ -1,11 +1,12 @@
 package codewars;
 
 import eight_kyu.PointsOfReflection;
+import eight_kyu.SmashWords;
 
 public class codewars {
 	
 	public static void main(String[] args) {
 		
-		System.out.println(PointsOfReflection.solution(new int[]{-1, -1}, new int[]{-3, -3}));
+		System.out.println(SmashWords.solution(new String[] { }));
 	}
 }
