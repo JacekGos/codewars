@@ -1,9 +1,11 @@
 package codewars;
 
+import eight_kyu.PointsOfReflection;
+
 public class codewars {
 	
 	public static void main(String[] args) {
 		
-		System.out.println(NiceArray.solution(new Integer[] {2,10,9,3}));
+		System.out.println(PointsOfReflection.solution(new int[]{-1, -1}, new int[]{-3, -3}));
 	}
 }
