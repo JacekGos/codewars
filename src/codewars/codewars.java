@@ -1,12 +1,13 @@
 package codewars;
 
-import eight_kyu.PointsOfReflection;
-import eight_kyu.SmashWords;
+import seven_kyu.RegexValidatePinCode;
 
 public class codewars {
 	
 	public static void main(String[] args) {
 		
-		System.out.println(SmashWords.solution(new String[] { }));
+		System.out.println(RegexValidatePinCode.validatePin("12323"));
+		
+		System.out.println("123\n23");
 	}
 }
