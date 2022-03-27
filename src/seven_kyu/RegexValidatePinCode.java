@@ -7,11 +7,17 @@ public class RegexValidatePinCode {
 	
 	public static boolean validatePin(String pin) {
 		
-//		Pattern pattern = Pattern.compile("^\\d{4}$|^\\d{6}$");
-		Pattern pattern = Pattern.compile("^\\s-");
-		
+		//this solution pass \n which is not ok
+		Pattern pattern = Pattern.compile("\\d{4}|\\d{6}");
+
 		Matcher matcher = pattern.matcher(pin);
-		
-	    return matcher.find();
-	  }
+
+		return matcher.find();
+	}
+
+	//this solution is ok
+	public static boolean validatePin3(String pin) {
+		return pin.matches("\\d{4}|\\d{6}");
+	}
+	
 }
