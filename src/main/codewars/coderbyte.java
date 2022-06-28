@@ -1,4 +1,4 @@
-package codewars;
+package main.codewars;
 
 public class coderbyte {
 

@@ -1,4 +1,4 @@
-package eight_kyu;
+package main.eight_kyu;
 
 public class SmashWords {
 

@@ -1,4 +1,4 @@
-package seven_kyu;
+package main.seven_kyu;
 
 import java.util.HashSet;
 
