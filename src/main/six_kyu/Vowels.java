@@ -1,4 +1,4 @@
-package six_kyu;
+package main.six_kyu;
 
 import java.util.ArrayList;
 import java.util.List;
