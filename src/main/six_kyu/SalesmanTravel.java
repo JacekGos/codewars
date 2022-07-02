@@ -4,36 +4,45 @@ import java.util.Iterator;
 import java.util.List;
 
 public class SalesmanTravel {
-	
+
 	public static String travel(String r, String zipcode) {
+
+		StringBuilder result = new StringBuilder(zipcode + ":");
+		StringBuilder streetsAndCities = new StringBuilder();
+		StringBuilder addressesNumbers = new StringBuilder("/");
 		
-		StringBuilder stringBldr = new StringBuilder();
-		String[] addresses = r.split(",");
-		
-		stringBldr.append(zipcode);
-		
-		for (String address : addresses) {
-			
+		for (String address : r.split(",")) {
+
 			String[] addressParts = address.split(" ");
-			String zipCodeFromAddress = addressParts[addressParts.length - 2] + " " + addressParts[addressParts.length - 1];
-			
+			String zipCodeFromAddress = addressParts[addressParts.length - 2] + " "
+					+ addressParts[addressParts.length - 1];
+
+			StringBuilder streetAndCity = new StringBuilder();
+
 			if (zipCodeFromAddress.equals(zipcode)) {
-				
-				String streetAndCity = "";
-				String number = addressParts[0];
-				
+
+				addressesNumbers.append(addressParts[0] + ",");
+
 				for (int i = 1; i < addressParts.length - 2; i++) {
 					
-					streetAndCity += addressParts[i] + " ";
+					streetAndCity.append(addressParts[i] + " ");
 				}
 				
-				System.out.println(number);
+				streetsAndCities.append(streetAndCity.deleteCharAt(streetAndCity.length() - 1) + ",");
 			}
 		}
 		
+		if (streetsAndCities.length() > 0 && addressesNumbers.length() > 0) {
+			
+			result.append(streetsAndCities.deleteCharAt(streetsAndCities.length() - 1));
+			result.append(addressesNumbers.deleteCharAt(addressesNumbers.length() - 1));
+		} else {
+			
+			result.append("/");
+		}
 		
 		
-		return "end";
+		return result.toString();
 	}
-	
+
 }
