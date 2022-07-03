@@ -9,12 +9,13 @@ import main.seven_kyu.RegexValidatePinCode;
 import main.seven_kyu.StrongNumber;
 import main.six_kyu.MexicanWave;
 import main.six_kyu.SalesmanTravel;
+import main.six_kyu.StopSpinningMyWords;
 import main.six_kyu.TwoSum;
 
 public class MainClass {
 	
 	public static void main(String[] args) {
 		
-		System.out.println(Arrays.toString(TwoSum.twoSum(new int[]{2,3,1}, 4)));
+		System.out.println(StopSpinningMyWords.spinWords("Hey wollef sroirraw"));
 	}
 }
