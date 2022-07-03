@@ -1,5 +1,8 @@
 package main.six_kyu;
 
+import java.util.Arrays;
+import java.util.stream.*;
+
 
 public class StopSpinningMyWords {
 	
@@ -17,6 +20,12 @@ public class StopSpinningMyWords {
 			}
 		}
 		return result.deleteCharAt(result.length() - 1).toString();
+		
+//		other solution
+//		return Arrays.stream(sentence.split(" "))
+//				.map(i -> i.length() >= 5 ? new StringBuilder(i).reverse().toString() : i)
+//				.collect(Collectors.joining(" "));
+				
 	}
 
 }
