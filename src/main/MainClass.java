@@ -16,6 +16,6 @@ public class MainClass {
 	
 	public static void main(String[] args) {
 		
-		System.out.println(StopSpinningMyWords.spinWords("Hey wollef sroirraw"));
+		System.out.println(StopSpinningMyWords.spinWords("Hey fellow warriors"));
 	}
 }
