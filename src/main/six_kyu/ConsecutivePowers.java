@@ -22,7 +22,6 @@ public class ConsecutivePowers {
 				String numberString = String.valueOf(i);
 				char[] digits = numberString.toCharArray();
 				double digitResult = 0;
-				
 				for (int j = 0; j < digits.length; j++) {
 					
 					double number = Character.digit(digits[j], 10);
