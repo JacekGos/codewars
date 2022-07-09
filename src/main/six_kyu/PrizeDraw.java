@@ -70,15 +70,8 @@ public class PrizeDraw {
 			for (char nameCh : name.toCharArray()) {
 
 				int rankVal = Character.toLowerCase(nameCh);
-//				if (rankVal >= 97) {
-//					rankVal -= 96;
-//				} else {
-//					rankVal -= 64;
-//				}
 				rankVal -= 96;
-
 				som += rankVal;
-
 			}
 
 			som += name.length();
