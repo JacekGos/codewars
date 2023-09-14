@@ -1,27 +1,22 @@
 package main;
 
-import java.util.Arrays;
+import main.fifth_kyu.DragonsCurve;
 
-import main.seven_kyu.Accumul;
-import main.seven_kyu.CharacterCounter;
-import main.seven_kyu.DigitsExplosion;
-import main.seven_kyu.RegexValidatePinCode;
-import main.seven_kyu.StrongNumber;
-import main.six_kyu.ConsecutivePowers;
-import main.six_kyu.LineSafari;
-import main.six_kyu.MexicanWave;
-import main.six_kyu.PrizeDraw;
-import main.six_kyu.SalesmanTravel;
-import main.six_kyu.StopSpinningMyWords;
-import main.six_kyu.TwoSum;
+import java.util.Arrays;
+import java.util.List;
 
 public class MainClass {
 
 	public static void main(String[] args) {
 
-		String st = "Addison,Jayden,Sofia,Michael,Andrew,Lily,Benjamin";
-		Integer[] we = new Integer[] {4, 2, 1, 4, 3, 1, 2};
+		DragonsCurve dc = new DragonsCurve();
 
-		System.out.println(PrizeDraw.nthRank(st, we, 3));
+		final List<Integer> ins = Arrays.asList((int)'a', (int)'b', (int)'F', (int)'R', (int)'L');
+
+		System.out.println(Character.valueOf((char) (int) 'F').toString());
+
+		ins.forEach(item -> System.out.println(dc.mapFunction.apply(item)));
 	}
+
+
 }
