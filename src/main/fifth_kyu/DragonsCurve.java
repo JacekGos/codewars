@@ -37,4 +37,9 @@ public class DragonsCurve {
     public IntPredicate createFilter(char filterWhat, boolean keep) {
         return null; //Dat predicate
     }
+
+//    private IntPredicate predicate = ((value, keep) -> {
+//        IntPredicate isValueKeeped =  ;
+//        return isValueKeeped;
+//    });
 }
